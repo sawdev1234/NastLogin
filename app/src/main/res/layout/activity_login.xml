@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:text="Login Form"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginLeft="170dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:layout_below="@+id/textview1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_email"
+        android:layout_below="@+id/image"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Email Or PhoneNumber"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_pass"
+        android:layout_below="@+id/et_email"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:drawablePadding="5dp"
+        android:inputType="textPassword"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_pass"
+        android:layout_below="@+id/et_pass"
+        android:text="Show Password"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/cb_pass"
+        android:text="Login"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancel"
+        android:text="Cancel"
+        android:layout_below="@+id/cb_pass"
+        android:layout_marginLeft="250dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_pass"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-23dp"
+        android:text="Forgot Password" />
+
+</RelativeLayout>
